@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../static/style.css" type="text/css">
+</head>
+  
+<body>
+  <div class="background-image">
+    <marquee behavior="" direction="" scrollamount="15"><center><h1>GET THE ACCURATE RESALE VALUE OF YOUR CAR...!</h1></marquee>
+    <center><h2>Please fill the following details of your car:</h2>
+<div class="form">
+<form action="/y_predict" method="post">
+<label>Registration year</label>
+  <input  type="number" id="pj" name="regyear" placeholder="Enter the year" >
+<br><br>
+
+<label>Registration month</label>
+  <input type="number" name="regmonth" id="pj" placeholder="Enter the month">
+<br><br>
+
+<label>Power of Car in PS</label>
+  <input type="number" name="powerps" id="pj" placeholder="Enter power of car">
+<br><br>
+
+<label>Kilometers the car as driven</label>
+  <input type="number" name="kms" id="pj" placeholder="Enter no of kms">
+<br><br>
+
+<label>GearBox type</label>
+  <input type="radio" id="manual" name="gearbox" value="manual" for="manual">Manual
+  <input type="radio" id="automatic" name="gearbox" value="automatic" for="automatic">Automatic
+  <input type="radio" name="gearbox" value="not-declared" for="not-declared">Not declared
+  <br><br>
+<label>Your car is damaged(or)repaired</label>
+  <input type="radio" id="Yes" name="dam" value="Yes" for="Yes">Yes
+  <input type="radio" id="No" name="dam" value="No" for="No">No 
+  <input type="radio" id="not-declared" name="dam" value="not-declared" for="not-declared">Not declared<br>
+  <br><br>
+
+<label>Modeltype</label>
+  <input type="text" name="modeltype" id="pj" placeholder="Enter the Model">
+<br><br> 
+
+<label>Brand of the car</label>
+  <input type="text" name="brand" id="pj" placeholder="Enter the Brand">
+<br><br>
+
+<label>Fuel type of the car</label>
+  <input type="text" name="fuel" id="pj" placeholder="Enter fule type">
+<br><br>
+
+<label>Vehicaltype</label>
+  <input type="text" name="vehicletype" id="pj" placeholder="Enter Vchicle type">
+  <br><br>
+
+<p><input  type="submit" value="PREDICT" style="background-color:#F28C0F;color:white; width: 125px; height:50px;"/></p>
+
+</form>
+</div>
+<b><h3>{{ypred}}</h3></b> 
+<br>
+<br>
+</div>
+</body>
+</html>
